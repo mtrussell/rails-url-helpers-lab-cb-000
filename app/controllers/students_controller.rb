@@ -5,6 +5,10 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
+  def edit
+    
+  end
+
   def show
     @student = set_student
     if @student.active
