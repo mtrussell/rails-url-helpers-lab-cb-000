@@ -6,7 +6,7 @@ class StudentsController < ApplicationController
   end
 
   def edit
-    @student = Student.find(params[:id])
+    @student = set_student
   end
 
   def show
