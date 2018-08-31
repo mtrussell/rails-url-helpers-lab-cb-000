@@ -20,7 +20,7 @@ class StudentsController < ApplicationController
       @is_active = "inactive"
     end
   end
-  
+
 
   private
 
