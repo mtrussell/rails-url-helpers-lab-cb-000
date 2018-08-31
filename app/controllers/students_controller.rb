@@ -5,7 +5,9 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
-  def edit
+  def activate
+    @student = set_student
+    @student.active = !@student.active
     redirect_to student_path(@student.id)
   end
 
