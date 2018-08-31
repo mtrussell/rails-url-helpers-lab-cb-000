@@ -6,7 +6,6 @@ class StudentsController < ApplicationController
   end
 
   def edit
-    @student = set_student
     redirect_to student_path(@student.id)
   end
 
