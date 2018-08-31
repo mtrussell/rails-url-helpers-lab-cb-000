@@ -7,6 +7,11 @@ class StudentsController < ApplicationController
 
   def show
     @student = set_student
+    if @student.active
+      is_active = "active"
+    else
+      is_active = "inactive"
+    end
   end
 
   private
